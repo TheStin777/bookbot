@@ -18,8 +18,11 @@ def char_stats(book_title):
                 
            else:
                letter[ch] = letter[ch] + 1
+        
 
         return letter
+
+
                
                
            
