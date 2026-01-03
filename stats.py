@@ -19,8 +19,21 @@ def char_stats(book_title):
            else:
                letter[ch] = letter[ch] + 1
         
-
+        letter
         return letter
+
+def sort_on(item):
+    return item["num"]
+
+def to_sort(char_stats):
+    
+    list = []
+    for k,v in char_stats.items():
+        new_dic = {"char":k, "num": v}
+        list.append(new_dic)
+    list.sort(reverse=True, key=sort_on)
+    return list
+    
 
 
                
